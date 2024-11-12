@@ -8,7 +8,8 @@
     "server": "tsx watch src/server/index.ts",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "vite preview"
   },
   "dependencies": {
     "@libsql/client": "^0.5.6",
