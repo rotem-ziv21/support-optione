@@ -50,10 +50,10 @@ export default function RegisterForm() {
         value={formData.password}
         onChange={(e) => setFormData({ ...formData, password: e.target.value })}
       />
-      <button onClick={handleRegister} disabled={isLoading}>
+      <button type="button" onClick={handleRegister} disabled={isLoading}>
         {isLoading ? 'Registering...' : 'Register'}
       </button>
-      <button onClick={handleLogin} disabled={isLoading}>
+      <button type="button" onClick={handleLogin} disabled={isLoading}>
         {isLoading ? 'Logging in...' : 'Login'}
       </button>
       {error && <div>{error}</div>}
